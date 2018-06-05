@@ -3,11 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Homepage</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header>    
-        <div class="icon-main" name="icon">
-            <p>This is the header.</p>
+        <div class="mobileMenuButton">
+            <div class="mobileMenuButtonBar_75"></div>
+            <div class="mobileMenuButtonBar_85"></div>
+            <div class="mobileMenuButtonBar_95"></div>
         </div>
         <nav>
             <ul>
@@ -19,7 +27,12 @@
         </nav>
     </header>
     <main>
-        <p>This is the main body. This is a small change. Back to master. This a change which I will document in a new branch.</p>
+        <div title="wrapper" id="fullpage">
+            <article title="About" id="about">About</article>
+            <article title="Work" id="work">Work</article>
+            <article title="Learning" id="learing">Discovery</article>
+            <article title="Contact" id="about">Contact</article>
+        </div>        
     </main>
     <footer>
         <p>This is the footer.</p>

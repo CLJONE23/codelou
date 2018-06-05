@@ -1,0 +1,87 @@
+/* NORAMLIZE 
+
+Refer to Normalize.min.css
+
+*/
+
+
+/* GLOBAL
+
+FONTS
+
+*/
+
+body {
+    background-color: #4b7447;
+}
+
+head {
+    height: 60px;
+    display: block;
+}
+
+
+.mobileMenuButton {
+    /* 60w x 30h */
+    box-sizing: border-box;
+    height: 30px;
+    width: 50px;
+    margin-left: 45px;
+    margin-top: 25px;
+    background-color: #4b7447;
+}
+
+.mobileMenuButtonBar_75,
+.mobileMenuButtonBar_85,
+.mobileMenuButtonBar_95 {
+    height: 6px;
+    width: 100%;
+}
+
+.mobileMenuButtonBar_75, .mobileMenuButtonBar_85 {
+    margin-bottom: 6px;
+}
+
+.mobileMenuButtonBar_75 {
+    background-color: rgba(142, 186, 67, 0.6);
+}
+.mobileMenuButtonBar_85 {
+    background-color: rgba(142, 186, 67, 0.8);
+}
+.mobileMenuButtonBar_95 {
+    background-color: rgba(142, 186, 67, 1.0)
+}
+
+
+
+/* MEDIA QUERIES
+
+4K              : 2560px
+Laptop - Stand  : 1024px
+Tablet          : 768px
+Mobile - Large  : 425px
+Mobile - Small  : 320px
+
+*/
+
+@media screen and (max-width: 320px){
+
+
+}
+
+@media screen and (max-width: 425px){
+
+
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 2560px){
+
+}
