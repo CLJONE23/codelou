@@ -1,41 +1,152 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags for compatibility with bootstrap -->
     <meta charset="utf-8">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/normalize.css"
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet">
+    <!-- Enter Title Below -->
+    <title>Casey Jones</title>
+    <!-- CSS\Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- CSS\fullpage.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.css">
+    <!-- JS\Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!-- JS\fullpage.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.1/vendors/scrolloverflow.min.js"></script>    
+    <!-- JS\Custom -->
     <script src="js/main.js"></script>
-  </head>
-  <body>
-    <header>    
-        <div class="mobileMenuButton">
-            <div class="mobileMenuButtonBar_75"></div>
-            <div class="mobileMenuButtonBar_85"></div>
-            <div class="mobileMenuButtonBar_95"></div>
-        </div>
-        <nav>
-            <ul>
-                <li>Page 1</li>
-                <li>Page 2</li>
-                <li>Page 3</li>
-                <li>Page 4</li>
-            </ul>
+    <!-- CSS\Custom -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body> 
+    <header class="sticky-top" id="header">    
+        <nav class="navbar navbar-expand-sm" id="nav-container">
+            <a class="navbar-brand" href="#welcome" id="nav-main-landing">Casey Jones</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon colored-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#about" id="nav-main-about">About</a>
+                    <a class="nav-item nav-link" href="#work" id="nav-main-work">Work</a>
+                    <a class="nav-item nav-link" href="#contact" id="nav-main-contact">Contact</a>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <div title="wrapper" id="fullpage">
-            <article title="About" id="about">About</article>
-            <article title="Work" id="work">Work</article>
-            <article title="Learning" id="learing">Discovery</article>
-            <article title="Contact" id="about">Contact</article>
-        </div>        
+    <main class="main h-100">        
+    <div id="fullpage">
+        <div class="section" id="main-landing">
+            <div class="container h-100 m-auto">
+                <div class="row align-items-center h-100">
+                    <div class="col-12 align-self-center">
+                        <h1 class="text-center pb-3">Hello, my name is Casey!</h1>
+                        <p class="text-center">I am a developer and I want to help you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="main-about">
+            <div class="container h-100 m-auto">
+                <div class="row align-items-center h-100">
+                    <div class="col-12 align-self-center">
+                        <h1 class="text-center pb-3">My humble beginnings...</h1>
+                        <p class="text-center">Laborum kogi migas, swag mumblecore hot chicken dolore artisan roof party truffaut nisi. Adipisicing sriracha ut, magna selfies farm-to-table authentic. Af taxidermy la croix, godard coloring book id esse man braid chartreuse. Marfa XOXO chillwave, do ut poutine twee voluptate ea cardigan hot chicken. Voluptate live-edge four loko, aesthetic trust fund bushwick mixtape disrupt selfies. 
+                        <p class="text-center">Oh. You need a little dummy text for your mockup? How quaint.</p>
+                        <p class="text-center">I bet you’re still using Bootstrap too…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="main-work">
+            <div class="container h-100 m-auto">
+                <div class="row h-100 align-items-center work-row">
+                    <div class="col-12 col-md-4 h-50 align-self-center work-experience" id="work-window-1">
+                    </div>
+                    <div class="col-12 col-md-4 h-50 align-self-center work-experience" id="work-window-2">
+                    </div>
+                    <div class="col-12 col-md-4 h-50 d-none d-md-inline-block align-self-center work-experience" id="work-window-3">
+                    </div>
+                    <div class="col-12 col-md-4 h-50 d-none d-md-inline-block align-self-center work-experience" id="work-window-4">
+                    </div>
+                    <div class="col-12 col-md-4 h-50 d-none d-md-inline-block align-self-center work-experience" id="work-window-5">
+                    </div>
+                    <div class="col-12 col-md-4 h-50 d-none d-md-inline-block align-self-center work-experience" id="work-window-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="main-contact">
+            <div class="container h-75 m-auto">
+                <div class="row align-items-center h-100">
+                    <div class="col-md-6 d-none d-md-block h-100 p-2">
+                        <div class="row h-100 align-items-start m-auto" id="insertText">
+                            <div class="col-12 align-self-center">
+                                <h5 id="behind-the-scene-header">Take a look behind the scenes</h5>
+                                <h6 class="text-muted" id="behind-the-scene-subheader">Enter something in the form to see the code behind the form!</h6>
+                                <div class="row align-items-center" id="insertText_FirstName">
+                                    <div class="col-12 align-self-center"></div>
+                                </div>
+                                <div class="row align-items-center" id="insertText_LastName">
+                                        <div class="col-12 align-self-center"></div>
+                                </div>
+                                <div class="row align-items-center" id="insertText_Email">
+                                        <div class="col-12 align-self-center"></div>
+                                </div>
+                                <div class="row align-items-center" id="insertText_Message">
+                                        <div class="col-12 align-self-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xs-12 h-100 m-2">
+                        <div class="row align-items-center h-100">
+                            <div class="col align-self-center">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-control-sm" id="contactFirstName" placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-control-sm" id="contactLastName" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-sm" id="contactEmail" placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control form-control-sm" id="contactMessage" placeholder="What's on your mind?"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-sm" id="send">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row h-25 no-gutters footer" id="footer">
+                    <div class="container h-100">
+                        <div class="row align-items-center h-50">
+                            <div class="col">
+                                <img class="social-media" src="img/flogo-HexRBG-Wht-58.png">
+                                <img class="social-media" src="img/Twitter_Social_Icon_Rounded_Square_White.png">
+                            </div>
+                        </div>
+                        <div class="row align-items-start h-50">
+                            <div class="col">
+                                <p>Designed and developed by Casey Jones.       &copy;  2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>This is the footer.</p>
-    </footer>
   </body>
 </html>

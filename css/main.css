@@ -1,87 +1,152 @@
-/* NORAMLIZE 
 
-Refer to Normalize.min.css
-
-*/
-
-
-/* GLOBAL
-
-FONTS
-
-*/
-
-body {
-    background-color: #4b7447;
+/********************************************                            
+Global
+*********************************************/
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
-head {
-    height: 60px;
-    display: block;
-}
+/********************************************                            
+Header
+*********************************************/
 
-
-.mobileMenuButton {
-    /* 60w x 30h */
-    box-sizing: border-box;
-    height: 30px;
-    width: 50px;
-    margin-left: 45px;
-    margin-top: 25px;
-    background-color: #4b7447;
-}
-
-.mobileMenuButtonBar_75,
-.mobileMenuButtonBar_85,
-.mobileMenuButtonBar_95 {
-    height: 6px;
+#header{
+    position:fixed;
+    height: 55px;
+    display:block;
     width: 100%;
+    z-index:9;
+    background-color: #0268c1;
 }
 
-.mobileMenuButtonBar_75, .mobileMenuButtonBar_85 {
-    margin-bottom: 6px;
+#header{
+    top:0px;
 }
 
-.mobileMenuButtonBar_75 {
-    background-color: rgba(142, 186, 67, 0.6);
-}
-.mobileMenuButtonBar_85 {
-    background-color: rgba(142, 186, 67, 0.8);
-}
-.mobileMenuButtonBar_95 {
-    background-color: rgba(142, 186, 67, 1.0)
-}
+/********************************************                            
+Navigation
+*********************************************/
 
-
-
-/* MEDIA QUERIES
-
-4K              : 2560px
-Laptop - Stand  : 1024px
-Tablet          : 768px
-Mobile - Large  : 425px
-Mobile - Small  : 320px
-
-*/
-
-@media screen and (max-width: 320px){
-
-
+.colored-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(249,186,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border: none;
 }
 
-@media screen and (max-width: 425px){
+.navbar {
+    background-color: #0268c1;
+}
 
+.navbar-brand {
+    color: #F9BA00;
+    font-weight: 600;
+    font-size: 1.25em;
+    display: block;
+    padding-right: 15px;
+    padding-bottom: 2px;
+    margin-bottom: 7px;
+}
+
+.navbar-brand:hover {
+    color: #F9BA00;
+    border-bottom: 2px solid #F9BA00;
+    margin-bottom: 5px;
+}
+
+.nav-item {
+    color: #F9BA00;
+    font-weight: 300;
+    font-size: 1em;
+    display: block;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    margin-bottom: 7px; 
+}
+
+.nav-item:hover {
+    color: #F9BA00;
+    border-bottom: 2px solid #F9BA00;
+    margin-bottom: 5px;
+}
+
+/********************************************                            
+Body
+*********************************************/
+
+#work-window-1 {
+    background: url(https://picsum.photos/400/400?image=1074);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work-window-2 {
+    background: url(https://picsum.photos/400/400?image=1071);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work-window-3 {
+    background: url(https://picsum.photos/400/400?image=1073);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work-window-4 {
+    background: url(https://picsum.photos/400/400?image=1061);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work-window-5 {
+    background: url(https://picsum.photos/400/400?image=1051);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work-window-6 {    
+    background: url(https://picsum.photos/400/400?image=1047);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/********************************************                            
+Form
+*********************************************/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(231, 231, 231);
+  }
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(231, 231, 231);
+  }
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(231, 231, 231);
+  }
+:-moz-placeholder { /* Firefox 18- */
+    color: rgb(231, 231, 231);
+  }
+
+#insertText{
+    background-color: #F8F9F9;
+    border-radius: 2px;
+    overflow-y: hidden;
+}
+
+
+/********************************************                            
+Footer
+*********************************************/
+
+#footer{
+    background-color: #0268c1;
+    color: #F9BA00;
+    padding: 5px;
+}
+
+.social-media {
+    height: 36px;
+    width: 36px;
+    margin: 10px 8px 5px 0px;
 
 }
 
-@media screen and (max-width: 768px){
 
-}
-
-@media screen and (max-width: 1024px){
-
-}
-
-@media screen and (max-width: 2560px){
-
-}
